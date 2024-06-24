@@ -3,6 +3,7 @@ import pickle5 as pickle
 from flask_cors import CORS
 
 app = Flask(__name__)
+application = app
 CORS(app)
 
 @app.route('/api', methods=['POST'])
