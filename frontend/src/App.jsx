@@ -202,7 +202,7 @@ console.log("newarr",newarr.length,newarr);
    });
   
      
-     let response = await fetch("http://127.0.0.1:5000/api", { 
+     let response = await fetch("https://ml-hfc.onrender.com/api", { 
        method: "POST",
        body: bodyContent,
        headers: headersList
