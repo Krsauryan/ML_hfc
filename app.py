@@ -5,7 +5,7 @@ import os
 
 app = Flask(__name__, static_folder='frontend/dist', static_url_path='/')
 application = app
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/')
 def serve_react_app():
