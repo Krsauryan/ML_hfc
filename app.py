@@ -3,7 +3,7 @@ import pickle5 as pickle
 from flask_cors import CORS
 import os
 
-app = Flask(__name__, static_folder='frontend/dist', static_url_path='/')
+app = Flask(__name__, static_folder='frontend', static_url_path='/')
 application = app
 CORS(app)
 
